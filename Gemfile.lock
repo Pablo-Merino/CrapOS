@@ -1,0 +1,32 @@
+PATH
+  remote: .
+  specs:
+    crap_os (0.0.0)
+      active_support (~> 3.0.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    active_support (3.0.0)
+      activesupport (= 3.0.0)
+    activesupport (3.0.0)
+    bump (0.3.9)
+    diff-lcs (1.1.3)
+    rake (10.0.3)
+    rspec (2.12.0)
+      rspec-core (~> 2.12.0)
+      rspec-expectations (~> 2.12.0)
+      rspec-mocks (~> 2.12.0)
+    rspec-core (2.12.2)
+    rspec-expectations (2.12.1)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.12.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bump
+  crap_os!
+  rake
+  rspec (~> 2)
