@@ -16,20 +16,8 @@ module CrapOS
 			end
 			@history << print_str
 			if log == :yes
-				case level
-				when :error
-					Logger.error(print_str)
-				when :debug
-					Logger.debug(print_str)
-				when :info
-					Logger.info(print_str)
-				when :fatal
-					Logger.fatal(print_str)
-				when :warn
-					Logger.warn(print_str)
-				when :created
-					Logger.created(print_str)
-				end
+				Logger.send(level, print_str)
+				
 			else
 				puts "#{print_str}"
 			end
