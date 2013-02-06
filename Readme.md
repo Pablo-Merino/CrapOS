@@ -3,16 +3,15 @@ A crap and not real OS in ruby
 Install
 =======
 
-    gem install crap_os
+    gem install crap_os # this is not in RubyGems
 
 Usage
 =====
 
-    CODE EXAMPLE
+    ./bin/crap_os -r ./root
 
 Author
 ======
 [Pablo Merino](http://pmerino.me)<br/>
 pablo@wearemocha.com<br/>
 License: MIT<br/>
-[![Build Status](https://travis-ci.org/pablo-merino/crap_os.png)](https://travis-ci.org/pablo-merino/crap_os)

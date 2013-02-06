@@ -1,6 +1,17 @@
 #!/usr/bin/env ruby	
-
+require 'colored'
 File.tap { |f| require f.expand_path(f.join(f.dirname(__FILE__),'..', 'crap_os.rb')) }
+trap("INT") { exit }
 
+CrapOS::Boot.new do |opts|
 
-CrapOS::Main.new(ARGV)
+	screens = []
+	(1..9).each do |id|
+		screens << CrapOS::Screen.new(id)
+	end
+	CrapOS::Kernel.new(opts, screens, 1) do |kernel|
+		CrapOS::BusyBox.new(kernel.screen, kernel.env_vars, kernel)
+
+	end
+	
+end

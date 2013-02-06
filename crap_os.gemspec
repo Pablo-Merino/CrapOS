@@ -10,4 +10,6 @@ Gem::Specification.new name, CrapOS::VERSION do |s|
 	s.files = `git ls-files`.split("\n")
 	s.license = "MIT"
 	s.add_dependency('active_support', ['~> 3.0.0'])
+	s.add_dependency("colored", ["~> 1.2"])  
+
 end
